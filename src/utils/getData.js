@@ -1,4 +1,4 @@
-const API = `https://goquotes-api.herokuapp.com/api/v1/`;
+const API = process.env.API;
 
 const getData = async () => {
   const apiURL = `${API}random?count=1`;
