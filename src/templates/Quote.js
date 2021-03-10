@@ -1,4 +1,6 @@
 import getData from '../utils/getData.js';
+import github from '../assets/images/github.png';
+import twitter from '../assets/images/twitter.png';
 
 const Quote = async () => {
   const data = await getData ();
@@ -8,10 +10,10 @@ const Quote = async () => {
     <p class="card__quote-author">- ${data.author} -</p>
     <footer>
     <a href="https://twitter.com/artick" target="_blank">
-      <img src="assets/images/twitter.png" />
+      <img src="${twitter}" />
     </a>
     <a href="https://github.com/artick" target="_blank">
-      <img src="assets/images/github.png" />
+      <img src="${github}" />
     </a>
     </footer>
   </div>
